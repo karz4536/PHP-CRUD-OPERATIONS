@@ -1,4 +1,15 @@
 <?php include 'Connection.php';?>
+<html>
+<head>
+        <style>
+            body{
+  color:yellow;
+  background-color:grey;
+  
+}
+            </style>
+</head>
+    </html>
 <?php
 if($_SERVER["REQUEST_METHOD"]=="POST")
 {

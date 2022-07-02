@@ -12,18 +12,15 @@
     </html>
 <?php
 
-$sql = "SELECT mname,mrating FROM kmit";
+$sql = "SELECT USN, SUBCODE, SSID, TEST1, TEST2 FROM IAMARKS";
 $result = $conn->query($sql);
 
 if ($result->num_rows > 0) {
   // output data of each row
   while($row = $result->fetch_assoc()) {
-    echo "name: " , $row["mname"], " - rating: " , $row["mrating"],  "<br>";
+    echo "USERname: " , $row["USN"], " - SCODE: " , $row["SUBCODE"]," SSID: " , $row["SSID"]," TEST1 " , $row["TEST1"]," TEST2: " , $row["TEST2"],  "<br>";
   }
-  echo "<br>";
-  echo "<a href='Home.php'>Click Here to Insert More Records</a>","<br>";
-echo "<a href='Delete.php'>Click Here to Delete Records</a>","<br>";
-echo "<a href='Update.php'>Click Here to Update the Records </a>","<br>";
+ 
 
 } else {
   echo "0 results";

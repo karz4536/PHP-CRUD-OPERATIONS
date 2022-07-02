@@ -1,4 +1,15 @@
 <?php include 'Connection.php';?>
+<html>
+<head>
+        <style>
+            body{
+  color:yellow;
+  background-color:grey;
+  
+}
+            </style>
+</head>
+    </html>
 <?php
 
 $sql = "SELECT usn,sname,address,phone,gender FROM student";

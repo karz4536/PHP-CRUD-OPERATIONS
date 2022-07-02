@@ -1,14 +1,25 @@
 <?php include 'Connection.php';?>
+<html>
+<head>
+        <style>
+            body{
+  color:yellow;
+  background-color:grey;
+  
+}
+            </style>
+</head>
+    </html>
 <?php
+
 if($_SERVER["REQUEST_METHOD"]=="POST")
 {
     $mname=$_REQUEST['mname'];
     $mrating=$_REQUEST['mrating'];
-    $_SESSION["mname"] = $mname;
-    $_SESSION["mrating"] = $mrating;
+   
 }
 
-$sql = "INSERT INTO kmit (mname, mrating) VALUES ('$mname', '$mrating');";
+$sql = "INSERT INTO kmit (mname, mrating) VALUES ('$mname', '$mrating')";
 
 
 

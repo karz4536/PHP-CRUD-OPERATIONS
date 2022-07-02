@@ -1,6 +1,17 @@
 <?php include 'Connection.php';?>
 
 <html>
+
+<head>
+        <style>
+            body{
+  color:yellow;
+  background-color:grey;
+  
+}
+            </style>
+</head>
+    
 <body>
 
 <form method="post" action="<?php echo $_SERVER['PHP_SELF']; ?>">
